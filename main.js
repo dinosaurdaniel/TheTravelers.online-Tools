@@ -345,7 +345,7 @@ globalThis.travelBot={
 	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, OR OTHERWISE, ARISING FROM,
 	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	SOFTWARE.
 	*/
@@ -986,55 +986,7 @@ globalThis.autoLoot={
         if(this.nextMove=='steal'){
             if (POPUP.isOpen==true||LOOT.mainEl.style.display==''){// stops if there is a little lag
                 if(POPUP.evTitle.innerHTML=='a desolate city'){// cities
-                    this.placeType='desolate'
-                }
-                else if(POPUP.evTitle.innerHTML=='a walled city'){
-                    this.placeType='walled'
-                }
-                else if(POPUP.evTitle.innerHTML=='a withered city'){
-                    this.placeType='withered'
-                }
-                else if(POPUP.evTitle.innerHTML=='a governing city'){
-                    this.placeType='governing'
-                }
-                else if(POPUP.evTitle.innerHTML=='a blasted city'){
-                    this.placeType='blasted'
-                }
-                else if(POPUP.evTitle.innerHTML=='a barn'){// houses
-                    this.placeType='barn'
-                }
-                else if(POPUP.evTitle.innerHTML=='a cabin'){
-                    this.placeType='cabin'
-                }
-                else if(POPUP.evTitle.innerHTML=='a garage'){
-                    this.placeType='garage'
-                }
-                else if(POPUP.evTitle.innerHTML=='a childcare center'){
-                    this.placeType='childcare'
-                }
-                else if(POPUP.evTitle.innerHTML=='a church'){
-                    this.placeType='church'
-                }
-                else if(POPUP.evTitle.innerHTML=='a humble residence'){
-                    this.placeType='humble'
-                }
-                else if(POPUP.evTitle.innerHTML=='a low home'){
-                    this.placeType='low'
-                }
-                else if(POPUP.evTitle.innerHTML=='an old home'){
-                    this.placeType='old'
-                }
-                else if(POPUP.evTitle.innerHTML=='a pet store'){
-                    this.placeType='pet'
-                }
-                else if(POPUP.evTitle.innerHTML=='a ruined house'){
-                    this.placeType='ruined'
-                }
-                else if(POPUP.evTitle.innerHTML=='a run-down shack'){
-                    this.placeType='run-down'
-                }
-                else if(POPUP.evTitle.innerHTML=='a weathered house'){
-                    this.placeType='weathered'
+                    this.placeType='other'
                 }
 		else{
 		    this.placeType='other'
